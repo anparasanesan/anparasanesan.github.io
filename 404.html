@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Page not found · Anparasanesan Tharmarajah</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script>
+  (function () {
+    try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<main class="wrap" style="min-height: 100vh; display: flex; align-items: center;">
+  <div class="term" style="width: 100%; max-width: 720px; margin: 0 auto;">
+    <div class="term-head"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div><span class="title">anparasanesan@dudley: ~ — zsh</span></div>
+    <div class="term-body" style="height: auto;">
+      <div class="term-out">
+        <p><span class="pr">anparasanesan<span class="at">@</span><span class="host">dudley</span> ~ $</span> cd <span id="path">this-page</span></p>
+        <p class="warn">404: no such file or directory</p>
+        <p class="dim">The page you were looking for isn't here. It may have moved.</p>
+        <p>&nbsp;</p>
+        <p><a href="/">← cd ~ (back to the homepage)</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+  document.getElementById('path').textContent = location.pathname.replace(/^\//, '') || 'this-page';
+</script>
+</body>
+</html>
